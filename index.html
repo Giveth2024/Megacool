@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body
+        {
+            background-color: aqua;
+        }
+
+        .background
+        {
+            /* 
+            display: flex;
+            justify-content: center;   //Please Note that border-spacing doesn't wrok with Flex properties as, Flex overrides border-spacing
+            justify-content: center;
+            */
+            background-color: black;
+            padding: 2%;
+            width: max-content;
+            margin: auto;
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        table
+        {
+            padding: 10px;
+            width: max-content;
+            border-spacing: 25px;
+
+        }
+
+        table, th, td
+        {
+            
+            text-align: center;
+        }
+
+        table:hover, th:hover, td:hover, button:hover
+        {
+            cursor: pointer;
+        }
+
+        th:hover, td:hover, button:hover, #num:hover
+        {
+            opacity: 0.8;
+        }        
+
+        th:active, td:active, button:active
+        {
+            opacity: 0.6;
+        }
+
+        th,td
+        {
+            padding: 25px;
+            border: black solid 3px;
+            font-weight: bold;
+        }
+
+
+        th, td, #num, button
+        {
+            border-radius: 5px;
+        }
+
+        th,td,#num
+        {
+            background-color: rgb(227, 227, 227);
+        }
+        
+        input[type=number]::-webkit-inner-spin-button
+        input[type=number]::-webkit-outer-spin-button
+        {
+            -webkit-animation: none;
+            margin: 0;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        #num, button
+        {
+            width: 330px;
+            height: 50px;
+            border: none;
+        }
+
+        button
+        {
+
+            background-color: orangered;
+            color: white;
+            font-size: 30px;
+        }
+
+        .input
+        {
+            width: max-content;
+            margin: auto;
+        }
+
+        .red
+        {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>MY FIRST CALCULATOR</h1>
+    <div class="background">
+        <div class="input">
+            <input type="text" name="Numbers" id="num">
+        </div>
+        <table>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>0</td>
+                <td>+</td>
+                <td class="red">C</td>
+            </tr>
+        </table>
+        <div class="input">
+            <button type="button">=</button>
+        </div>
+    </div>
+</body>
+</html>
