@@ -126,3 +126,21 @@ aside p
 {
     background-color: grey;
 }
+
+#search
+{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.searched
+{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+hr{
+    gor
+}
